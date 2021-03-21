@@ -2,12 +2,12 @@ const http = require("http");
 const hostname = "127.0.0.1";
 const port = 3000;
 const firebase = require("firebase");
-const { config } = require("dotenv/types");
+// const { config } = require("dotenv/types");
 
-require('dotenv').config();
-const env = process.env;
+// require('dotenv').config();
+// const env = process.env;
 
-console.log(env.API_KEY);
+// console.log(env.API_KEY);
 
 // let firebaseConfig = {
 //   apiKey: env.API_KEY,
@@ -49,5 +49,5 @@ const server = http.createServer(
 )
 
 server.listen(port, hostname, () => {
-  console.log('Server running at http://${hostname}:${port}/');
+  console.log(`Server running at http://${hostname}:${port}/`);
 })
