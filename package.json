@@ -7,6 +7,7 @@
     "test": "echo \"no test specified\" && exit 1"
   },
   "dependencies": {
-    "firebase" : "^5.8.4"
+    "dotenv": "^8.2.0",
+    "firebase": "^5.8.4"
   }
 }
