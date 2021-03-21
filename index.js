@@ -19,9 +19,9 @@ let firebaseConfig = {
 var fbase;
 
 try {
+  //firebaseオブジェクトの初期化
   fbase = firebase.initializeApp(firebaseConfig);
-
-}catch(e){
+} catch(e){
   console.log(e);
 }
 
@@ -36,6 +36,5 @@ const server = http.createServer(
 )
 
 server.listen( port, hostname, () => {
-  console.log(process.env.API_KEY);
   console.log(`Server running at http://${hostname}:${port}/`);
 })
